@@ -1,0 +1,14 @@
+<!-- Products List View -->
+<div class="mb-6">
+    <h2 class="text-2xl font-bold mb-4">Products Management</h2>
+    <button id="add-product-btn" class="btn-primary">
+        <i class="fas fa-plus mr-2"></i>Add New Product
+    </button>
+</div>
+<div id="products-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Products will be loaded here dynamically -->
+    <div class="col-span-full text-center py-8">
+        <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary mx-auto"></div>
+        <p class="mt-4 text-gray-500">Loading products...</p>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+/* Custom styles beyond Tailwind */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+    @apply bg-primary text-white px-4 py-2 rounded hover:bg-red-700 transition;
+}
+
+.btn-secondary {
+    @apply bg-secondary text-white px-4 py-2 rounded hover:bg-gray-800 transition;
+}
+
+.form-input {
+    @apply w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary;
+}
+
+.form-label {
+    @apply block text-gray-700 font-medium mb-1;
+}
+
+.alert-success {
+    @apply bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4;
+}
+
+.alert-error {
+    @apply bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4;
+}
+
+/* Animation for loading and transitions */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
